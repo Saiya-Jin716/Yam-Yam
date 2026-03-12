@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Welcome...</title>
+        <script src ="Lab.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 style="color: black; text-align: center;">I'm Bob, and this... is my space</h1>
+            <h2>A Simple Form</h2>
+            <p style="color: red; font-size: larger;">Before you is an HTML element that contains and "input" element</p>
+            <form style="background-color: aqua;">
+                Username:
+                <input type="text" name="username">
+                <input type="submit" value="submit">
+                <br/>
+                Password:
+                <input type="password" name="password">
+                <br/>
+                Email:
+                <input type="email" name="username">
+                <br/>
+                Gender:
+                <input type="radio" name="gender" value="male"> male
+                <input type="radio" name="gender" value="Female"> Female
+                <br/>
+                Hobby:
+                <input type="checkbox" name="hobby" value="Sing"> Sing
+                <input type="checkbox" name="hobby" value="Dancing"> Dancing
+                <input type="checkbox" name="hobby" value="Reading"> Reading
+                <br/>
+                Date:
+                <input type="date" name="Date">
+                <br/>
+                File:
+                <input type="file" name="file">
+            </form>
+            <form>
+                Value: <input type="text" value="default text"><br>
+                Read-Only: <input type="text" value="name to be read only" readonly><br>
+                Required: <input type="text" required><br>
+                Disabled: <input type="text" disabled><br>
+                Placeholder: <input type="text" placeholder="Enter your name"><br>
+                Maxlength: <input type="text" maxlength="4"><br>
+                Range from min to max: <input type="range" min="0" max="9"><br>
+            </form>
+        </header>
+        <p>Welcome to my unique space, Alice</p>
+        <section>
+            <p style="background-color: orange;">Let's talk about me</p>
+                     <div style="display: flex; gap:20pt; align-items: center;">
+            <div>
+                <img id="photo" width="100">
+            </div>    
+            <div style="font-size: large;">
+                Name: <span id = "name"></span><br>
+                Age: <span id = "age"></span><br>
+                Level: <span id = "level"></span><br>
+                Course: <span id = "course"></span><br>
+                Department: <span id = "department"></span><br>
+            </div>
+        </div> 
+        </section>
+        <section>
+            <p style="background-color: gold;">Now... let's talk business</p>
+        </section>
+        <input type="text" id = "numbers" placeholder="Enter numbers separated by commas">
+        <button onclick="calculate()">Get Average</button>
+        <div id = "result" style="color: red;"></div>
+        <ul id="fruitList"></ul>
+        <footer>
+            <p> Author: Bob</p>
+            <p><a href="mailto:2507143.@leedstrinity.ac.uk">2507143.@leedstrinity.ac.uk></a></p>
+        </footer>
+    </body>
+</html>
